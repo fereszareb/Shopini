@@ -1,0 +1,25 @@
+{
+
+    "menu":[
+        {
+            "categorie":"vetement" ,
+            "id":1 ,
+            "link":"https://dgdbddidd",
+            "sous_categorie":[
+                {"sous_categorie":"pull homme","id":12 , "link":"https://dgdbddidd"},
+                {"sous_categorie":"pull femme","id":5 , "link":"https://dgdbddidd"},
+                {"sous_categorie":"chaussure","id":152 , "link":"https://dgdbddidd"}
+            ]
+        },
+        {
+            "categorie":"Informatique" ,
+            "id":1 ,
+            "link":"https://dgdbddidd",
+            "sous_categorie":[
+                {"sous_categorie":"Ordinateur portable","id":12 , "link":"https://dgdbddidd"},
+                {"sous_categorie":"Ecran","id":5 , "link":"https://dgdbddidd"},
+                {"sous_categorie":"Afficheur","id":152 , "link":"https://dgdbddidd"}
+            ]
+        }
+    ]
+}

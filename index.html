@@ -5,45 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
-    <script src="js/Bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/Bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+    <nav class="navbar fixed-top navbar-light bg-light" >
+        <div class="container-lg position-relative" style="height: 65px;">
+            <div class="position-absolute top-50 start-0 translate-middle-y ps-2">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="form-group d-none d-lg-flex">
+                    <div class="search">
+                        <input class="search-shopini" type="search" placeholder="Cherchez un produit, une marque ou une catégorie" aria-label="Search">
+                    </div>
+                    <button class="search-button-shopini" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="position-absolute top-50 start-50 translate-middle">
+                LOGO
+            </div>
+            <div class="ms-auto p-2">
+                <div class="user-details">
+                    <a class="profile">connection</a>
+                    <span>|</span>
+                    <span class="dropdown panier-dropdown">
+                        <a class="shopping-card" id="panier-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Panier / <span id="total-prise-of-product"></span> TND</span>
+                            <i class="fas fa-shopping-cart">
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger nbr-product" id="nombre-of-product-in-panier"></span>
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" id="panier_dropdown_id" aria-labelledby="panier-dropdown" data-bs-popper="none">
+                            <li >
+                                <ul class="product_list_panier">
+                                    <li>
+                                        <a href="" class="remove" data-product_id="39">×</a>
+                                        <img width="300" height="300" src="" loading="lazy"> 
+                                        <a>Computer software RX09-021454 blue with 3 free printer , scanner and 100 dinars cadreaux </a>
+                                        <div class="prise">
+                                            <span class="quantite">7</span>
+                                            <span>x</span>
+                                            <span class="prise-product">5.00</span>
+                                            <span class="devise">TND</span>
+                                        </div>				
+                                    </li>
+                                    <li>
+                                        <a href="" class="remove" data-product_id="39">×</a>
+                                        <img width="300" height="300" src="" loading="lazy"> 
+                                        <a>Computer software RX09-021454 blue with 3 free printer , scanner and 100 dinars cadreaux </a>
+                                        <div class="prise">
+                                            <span class="quantite">7</span>
+                                            <span>x</span>
+                                            <span class="prise-product">5.00</span>
+                                            <span class="devise">TND</span>
+                                        </div>				
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><hr><span id="total-prise-product"> TND</span><hr></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
         </div>
-      </nav>
+        <div class="container-fluid navbar-expand-lg bg-primary">
+            <div class="mx-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="add">
+
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+<div style="height: 3000px;"></div>
+
+
+<script src="./js/navbar.js"></script>
 </body>
 </html>
